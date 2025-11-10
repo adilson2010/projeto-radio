@@ -1,4 +1,5 @@
 node_modules
 vite.config.ts
-
+vite-env.d.ts
+preview: vite preview
 #teste para repositorio
