@@ -1,15 +1,16 @@
 
 import { useState, useRef, useEffect, forwardRef, useImperativeHandle } from 'react';
 
+
 interface RadioPlayerRef {
   togglePlay: () => void;
 }
 
-const RadioPlayer = forwardRef<RadioPlayerRef>((props, ref) => {
+const RadioPlayer = forwardRef<RadioPlayerRef>((_props, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(70);
   const [isLoading, setIsLoading] = useState(false);
-  const [connectionStatus, setConnectionStatus] = useState('Pronto para ouvir');
+  const [connectionStatus, setConnectionStatus] = useState('Apertar play para conectar');
   const [listeners] = useState(1247);
   const audioRef = useRef<HTMLAudioElement>(null);
 

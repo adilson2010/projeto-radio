@@ -1,6 +1,14 @@
 
 import { useEffect } from 'react';
 
+declare global {
+  interface Window {
+    Chatroll?: {
+      init: (config: object) => void;
+    };
+  }
+}
+
 export default function ChatrollChat() {
   useEffect(() => {
     // Carregar script do Chatroll
@@ -60,7 +68,7 @@ export default function ChatrollChat() {
       {/* Informações do Chat */}
       <div className="mt-3 pt-3 border-t border-gray-200">
         <div className="flex items-center justify-between text-xs text-gray-500">
-          <span>Powered by Chatroll</span>
+          <span>bate papo do regueiro</span>
           <div className="flex items-center space-x-1">
             <i className="ri-shield-check-line text-green-600"></i>
             <span>Chat moderado</span>

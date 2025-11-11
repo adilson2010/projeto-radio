@@ -1,13 +1,11 @@
 
-import Button from '../base/Button';
-
 export default function AppDownload() {
   const handleStoreDownload = (store: string) => {
     // Simula redirecionamento para as lojas
     if (store === 'google') {
-      window.open('https://play.google.com/store/apps', '_blank');
+      window.open('https://play.google.com/store/apps/details?id=com.zenofm.player&hl=pt_BR/', '_blank');
     } else if (store === 'apple') {
-      window.open('https://apps.apple.com/', '_blank');
+      window.open('https://apps.apple.com/br/app/zenoradio/id1207197757/', '_blank');
     }
   };
 

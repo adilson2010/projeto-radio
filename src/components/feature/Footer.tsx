@@ -24,16 +24,16 @@ export default function Footer() {
               os melhores sons do reggae roots e cultura jamaicana.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-facebook-fill text-xl"></i>
               </a>
-              <a href="#" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-instagram-line text-xl"></i>
               </a>
-              <a href="#" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-youtube-fill text-xl"></i>
               </a>
-              <a href="#" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-spotify-fill text-xl"></i>
               </a>
             </div>
