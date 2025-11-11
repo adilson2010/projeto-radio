@@ -174,7 +174,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-6">Sobre a Ras Reggae Radio</h2>
               <p className="text-lg mb-6 opacity-90">
                 Desde 2010, a Ras Reggae Radio tem sido a voz autêntica do reggae no Brasil e no mundo. 
-                Nossa missão é espalhar a mensagem de amor, paz e unidade através da música reggae.
+                Nossa missão é espalhar a mensagem de amor, paz e humilde através da música reggae.
               </p>
               <p className="text-lg mb-8 opacity-90">
                 Com uma programação cuidadosamente selecionada, apresentamos desde os clássicos atemporais 
