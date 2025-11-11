@@ -1,44 +1,7 @@
 
-import { useState } from 'react';
 import Button from '../base/Button';
 
 export default function AppDownload() {
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [platform, setPlatform] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email || !platform) {
-      alert('Por favor, preencha todos os campos obrigatórios.');
-      return;
-    }
-
-    const formData = new FormData();
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('platform', platform);
-
-    try {
-      const response = await fetch('https://readdy.ai/api/form/d47n1ivjsic9gsa4ulrg', {
-        method: 'POST',
-        body: new URLSearchParams(formData as any)
-      });
-
-      if (response.ok) {
-        alert('Solicitação enviada! Você receberá o link de download em breve.');
-        setEmail('');
-        setPhone('');
-        setPlatform('');
-      } else {
-        alert('Erro ao enviar solicitação. Tente novamente.');
-      }
-    } catch (error) {
-      alert('Erro ao enviar solicitação. Tente novamente.');
-    }
-  };
-
   const handleStoreDownload = (store: string) => {
     // Simula redirecionamento para as lojas
     if (store === 'google') {
@@ -57,49 +20,49 @@ export default function AppDownload() {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8 items-start">
+      <div className="grid lg:grid-cols-2 gap-8 items-center">
         {/* Recursos do App */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Recursos do App:</h3>
-          <div className="space-y-3">
+          <h3 className="text-xl font-bold mb-6">Recursos do App:</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center space-x-3">
               <i className="ri-smartphone-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
-              <span>Disponível para iOS e Android</span>
+              <span className="text-sm">iOS e Android</span>
             </div>
             <div className="flex items-center space-x-3">
               <i className="ri-radio-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
-              <span>Streaming de alta qualidade</span>
+              <span className="text-sm">Qualidade HD</span>
             </div>
             <div className="flex items-center space-x-3">
               <i className="ri-download-cloud-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
-              <span>Funciona offline com favoritos</span>
+              <span className="text-sm">Offline com favoritos</span>
             </div>
             <div className="flex items-center space-x-3">
               <i className="ri-notification-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
-              <span>Notificações de programas</span>
+              <span className="text-sm">Notificações</span>
             </div>
             <div className="flex items-center space-x-3">
               <i className="ri-chat-3-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
-              <span>Chat integrado</span>
+              <span className="text-sm">Chat integrado</span>
             </div>
             <div className="flex items-center space-x-3">
               <i className="ri-headphone-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
-              <span>Controles de áudio avançados</span>
+              <span className="text-sm">Controles avançados</span>
             </div>
           </div>
         </div>
 
         {/* Download Direto das Lojas */}
         <div className="text-center">
-          <h3 className="text-xl font-bold mb-6">Download Direto</h3>
-          <div className="space-y-4">
+          <h3 className="text-xl font-bold mb-6">Download Grátis</h3>
+          <div className="space-y-4 max-w-sm mx-auto">
             {/* Google Play Store */}
             <button
               onClick={() => handleStoreDownload('google')}
-              className="w-full bg-black hover:bg-gray-800 transition-colors rounded-lg p-4 flex items-center space-x-4 cursor-pointer group"
+              className="w-full bg-black hover:bg-gray-800 transition-all duration-300 rounded-xl p-4 flex items-center space-x-4 cursor-pointer group hover:scale-105"
             >
-              <div className="w-10 h-10 flex items-center justify-center">
-                <i className="ri-google-play-fill text-2xl text-green-400"></i>
+              <div className="w-12 h-12 flex items-center justify-center">
+                <i className="ri-google-play-fill text-3xl text-green-400"></i>
               </div>
               <div className="text-left flex-1">
                 <div className="text-xs text-gray-300">Disponível no</div>
@@ -111,10 +74,10 @@ export default function AppDownload() {
             {/* Apple App Store */}
             <button
               onClick={() => handleStoreDownload('apple')}
-              className="w-full bg-black hover:bg-gray-800 transition-colors rounded-lg p-4 flex items-center space-x-4 cursor-pointer group"
+              className="w-full bg-black hover:bg-gray-800 transition-all duration-300 rounded-xl p-4 flex items-center space-x-4 cursor-pointer group hover:scale-105"
             >
-              <div className="w-10 h-10 flex items-center justify-center">
-                <i className="ri-apple-fill text-2xl text-white"></i>
+              <div className="w-12 h-12 flex items-center justify-center">
+                <i className="ri-apple-fill text-3xl text-white"></i>
               </div>
               <div className="text-left flex-1">
                 <div className="text-xs text-gray-300">Baixar na</div>
@@ -124,88 +87,12 @@ export default function AppDownload() {
             </button>
           </div>
 
-          <div className="mt-6 p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg">
+          <div className="mt-6 p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg max-w-sm mx-auto">
             <div className="flex items-center justify-center space-x-2 text-sm">
               <i className="ri-shield-check-line text-green-300"></i>
               <span>App oficial e seguro</span>
             </div>
           </div>
-        </div>
-
-        {/* Formulário de Solicitação */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6">
-          <h3 className="text-lg font-bold mb-4 text-center">Receber Link por Email</h3>
-          <form onSubmit={handleSubmit} data-readdy-form id="download-app">
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-semibold mb-2">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-sm"
-                  placeholder="seu@email.com"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold mb-2">
-                  Telefone (opcional)
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-sm"
-                  placeholder="(11) 99999-9999"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold mb-2">
-                  Plataforma *
-                </label>
-                <div className="space-y-2">
-                  <label className="flex items-center space-x-2 cursor-pointer">
-                    <input
-                      type="radio"
-                      name="platform"
-                      value="iOS"
-                      checked={platform === 'iOS'}
-                      onChange={(e) => setPlatform(e.target.value)}
-                      className="text-yellow-300"
-                    />
-                    <span className="text-sm">iOS (iPhone/iPad)</span>
-                  </label>
-                  <label className="flex items-center space-x-2 cursor-pointer">
-                    <input
-                      type="radio"
-                      name="platform"
-                      value="Android"
-                      checked={platform === 'Android'}
-                      onChange={(e) => setPlatform(e.target.value)}
-                      className="text-yellow-300"
-                    />
-                    <span className="text-sm">Android</span>
-                  </label>
-                </div>
-              </div>
-
-              <Button 
-                type="submit"
-                variant="secondary"
-                className="w-full whitespace-nowrap"
-              >
-                <i className="ri-mail-send-line mr-2"></i>
-                Enviar Link
-              </Button>
-            </div>
-          </form>
         </div>
       </div>
 

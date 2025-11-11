@@ -5,7 +5,7 @@ export default function ChatrollChat() {
   useEffect(() => {
     // Carregar script do Chatroll
     const script = document.createElement('script');
-    script.src = 'https://chatroll.com/embed/chat/chatrasreggae?id=ukTmEbbUQET&platform=html';
+    script.src = 'https://chatroll.com/embed/chat/rasreggaeradio';
     script.async = true;
     script.id = 'chatroll-script';
     
@@ -16,7 +16,7 @@ export default function ChatrollChat() {
         window.Chatroll.init({
           id: 'ras-reggae-radio',
           width: '100%',
-          height: '350px',
+          height: '650px',
           theme: 'green'
         });
       }
@@ -51,7 +51,6 @@ export default function ChatrollChat() {
           height="100%"
           frameBorder="0"
           scrolling="no"
-          allowTransparency="true"
           allow="autoplay; encrypted-media"
           title="Chat Ao Vivo - Ras Reggae Radio"
           className="w-full h-full"

@@ -16,17 +16,12 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold" style={{ fontFamily: 'Pacifico, serif' }}>Ras Reggae Radio</h3>
-                <p className="text-sm opacity-90">A sua rádio reggae 24h</p>
+                <p className="text-sm opacity-90">A Sua 24h</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              A Radio proporciona-te as melhores vibrações ao ritmo do melhor reggae,
-               24 horas por dia. oi em 2010 que a Ras Reggae Radio deu os seus primeiros passos, 
-               no Panorama do Reggae em Belém do Pará. Um espaço cativante para você, 
-               além de compartilhar novas músicas, 
-               momentos maravilhosos entre amigos e novos apaixonados pelo estilo musical; 
-               a Ras Reggae veio trazer uma nova abordagem na web. 
-               Cultivando sempre amizade, respeito em prol de um objetivo universal que é o Reggae.
+              A melhor rádio reggae online do Brasil. Transmitindo 24 horas por dia 
+              os melhores sons do reggae roots e cultura jamaicana.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
@@ -84,7 +79,7 @@ export default function Footer() {
             href="https://readdy.ai/?origin=logo" 
             className="text-gray-400 hover:text-yellow-300 transition-colors text-sm mt-2 md:mt-0"
           >
-            Powered Ras Reggae Radio 
+            Powered by Roots Ras Reggae
           </a>
         </div>
       </div>
