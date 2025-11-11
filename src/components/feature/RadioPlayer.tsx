@@ -128,7 +128,7 @@ const RadioPlayer = forwardRef<RadioPlayerRef>((_props, ref) => {
         <h3 className="text-white text-2xl font-bold mb-2" style={{ fontFamily: 'Pacifico, serif' }}>
           Ras Reggae Radio
         </h3>
-        <p className="text-yellow-300 text-sm opacity-90">Reggae • 24/7 • Qualidade HD</p>
+        <p className="text-yellow-300 text-sm opacity-90"> • A Sua Rádio 24h • Qualidade HD</p>
       </div>
 
       {/* Status */}
