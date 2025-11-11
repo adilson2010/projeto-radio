@@ -1,16 +1,15 @@
 
 import { useState, useRef, useEffect, forwardRef, useImperativeHandle } from 'react';
 
-
 interface RadioPlayerRef {
   togglePlay: () => void;
 }
 
-const RadioPlayer = forwardRef<RadioPlayerRef>((_props, ref) => {
+const RadioPlayer = forwardRef<RadioPlayerRef>((props, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(70);
   const [isLoading, setIsLoading] = useState(false);
-  const [connectionStatus, setConnectionStatus] = useState('Apertar play para conectar');
+  const [connectionStatus, setConnectionStatus] = useState('Pronto para ouvir');
   const [listeners] = useState(1247);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -230,8 +229,8 @@ const RadioPlayer = forwardRef<RadioPlayerRef>((_props, ref) => {
         <button 
           onClick={() => {
             const shareData = {
-              title: 'Ras Reggae Radio - Ao Vivo',
-              text: 'Escutando a melhor rádio reggae online!',
+              title: 'Eu estou ouvindo Rádio Ras Reggae pelo site!',
+              text: ' Conectando você em https://www.rasreggaeradio.com/ #OuvirReggae via @rasreggaeradio  !',
               url: window.location.href
             };
             

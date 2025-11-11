@@ -13,7 +13,7 @@ export default function Home() {
 
   const handlePlayNow = () => {
     // Scroll para o player e iniciar reprodução
-    const playerElement = document.getElementById('radio-player');
+    const playerElement = document.getElementById('player');
     if (playerElement) {
       playerElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
       // Aguardar scroll e então iniciar reprodução
@@ -31,6 +31,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section 
+        id="home"
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://readdy.ai/api/search-image?query=Vibrant%20reggae%20music%20festival%20scene%20with%20colorful%20Rastafarian%20flags%2C%20musical%20instruments%20like%20guitars%20and%20drums%2C%20tropical%20palm%20trees%2C%20warm%20sunset%20lighting%2C%20people%20dancing%20and%20celebrating%2C%20Bob%20Marley%20style%20atmosphere%2C%20green%20yellow%20red%20colors%2C%20peaceful%20unity%20vibe%2C%20outdoor%20concert%20stage%2C%20speakers%20and%20sound%20equipment%2C%20Caribbean%20island%20setting%2C%20joyful%20community%20gathering%2C%20authentic%20reggae%20culture%20celebration&width=1920&height=1080&seq=hero-reggae-bg&orientation=landscape')`
@@ -42,10 +43,10 @@ export default function Home() {
               Ras Reggae Radio
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
-              A melhor música reggae 24 horas por dia, 7 dias por semana
+              A melhor música reggae 24 horas por dia,
             </p>
             <p className="text-lg mb-12 opacity-80 max-w-2xl mx-auto">
-              Conecte-se com a cultura reggae autêntica. Ouça os clássicos de Bob Marley, Jimmy Cliff, Burning Spear e descubra novos talentos do reggae mundial.
+              Conecte-se com a cultura reggae autêntica. Ouça os clássicos do reggae roots e descubra novos talentos do reggae mundial.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -98,11 +99,11 @@ export default function Home() {
       </section>
 
       {/* Player e Chat Section */}
-      <section className="py-20 bg-white">
+      <section id="player" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Radio Player */}
-            <div id="radio-player" className="flex justify-center">
+            <div className="flex justify-center">
               <RadioPlayer ref={radioPlayerRef} />
             </div>
 
@@ -146,7 +147,7 @@ export default function Home() {
       </section>
 
       {/* Program Schedule */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-yellow-50">
+      <section id="programacao" className="py-20 bg-gradient-to-br from-green-50 to-yellow-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-green-800 mb-4">Programação</h2>
@@ -159,14 +160,14 @@ export default function Home() {
       </section>
 
       {/* App Download */}
-      <section className="py-20 bg-white">
+      <section id="app" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <AppDownload />
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-br from-green-800 to-yellow-600 text-white">
+      <section id="contato" className="py-20 bg-gradient-to-br from-green-800 to-yellow-600 text-white">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -198,6 +199,7 @@ export default function Home() {
                 src="https://readdy.ai/api/search-image?query=Professional%20reggae%20radio%20studio%20setup%20with%20vintage%20microphones%2C%20mixing%20console%2C%20vinyl%20records%2C%20Bob%20Marley%20posters%2C%20Rastafarian%20colors%2C%20warm%20lighting%2C%20broadcasting%20equipment%2C%20headphones%2C%20speakers%2C%20cozy%20atmosphere%2C%20authentic%20reggae%20culture%20elements%2C%20green%20yellow%20red%20decorations%2C%20peaceful%20vibe%2C%20music%20production%20environment&width=600&height=400&seq=studio-about&orientation=landscape"
                 alt="Estúdio da Ras Reggae Radio"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+                loading="lazy"
               />
             </div>
           </div>

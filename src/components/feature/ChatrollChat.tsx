@@ -1,14 +1,6 @@
 
 import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    Chatroll?: {
-      init: (config: object) => void;
-    };
-  }
-}
-
 export default function ChatrollChat() {
   useEffect(() => {
     // Carregar script do Chatroll
@@ -22,9 +14,9 @@ export default function ChatrollChat() {
       // Configurar o chat após carregar
       if (window.Chatroll) {
         window.Chatroll.init({
-          id: 'ras-reggae-radio',
+          id: 'rasreggaeradio',
           width: '100%',
-          height: '650px',
+          height: '350px',
           theme: 'green'
         });
       }
@@ -68,7 +60,7 @@ export default function ChatrollChat() {
       {/* Informações do Chat */}
       <div className="mt-3 pt-3 border-t border-gray-200">
         <div className="flex items-center justify-between text-xs text-gray-500">
-          <span>bate papo do regueiro</span>
+          <span>Powered by Chatroll</span>
           <div className="flex items-center space-x-1">
             <i className="ri-shield-check-line text-green-600"></i>
             <span>Chat moderado</span>

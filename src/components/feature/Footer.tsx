@@ -16,7 +16,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold" style={{ fontFamily: 'Pacifico, serif' }}>Ras Reggae Radio</h3>
-                <p className="text-sm opacity-90">A Sua 24h</p>
+                <p className="text-sm opacity-90">A Sua Rádio 24h</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4">
@@ -24,17 +24,17 @@ export default function Footer() {
               os melhores sons do reggae roots e cultura jamaicana.
             </p>
             <div className="flex space-x-4">
-              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="https://facebook.com/rasreggaeradio" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-facebook-fill text-xl"></i>
               </a>
-              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="https://instagram.com/rasreggaeradio" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-instagram-line text-xl"></i>
               </a>
-              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+              <a href="https://youtube.com/radiorasreggae" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
                 <i className="ri-youtube-fill text-xl"></i>
               </a>
-              <a href="" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
-                <i className="ri-spotify-fill text-xl"></i>
+              <a href="https://twitter.com/rasreggaeradio" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-300 transition-colors w-8 h-8 flex items-center justify-center">
+                <i className="ri-twitter-fill text-xl"></i>
               </a>
             </div>
           </div>
@@ -57,11 +57,11 @@ export default function Footer() {
             <div className="space-y-2 text-gray-300">
               <div className="flex items-center space-x-2">
                 <i className="ri-mail-line w-4 h-4 flex items-center justify-center"></i>
-                <span>contato@radiorasreggae.com.br</span>
+                <span>norespo@radiorasreggae.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <i className="ri-whatsapp-line w-4 h-4 flex items-center justify-center"></i>
-                <span>(11) 99999-9999</span>
+                <span>(00) 99999-9999</span>
               </div>
               <div className="flex items-center space-x-2">
                 <i className="ri-radio-line w-4 h-4 flex items-center justify-center"></i>
@@ -76,10 +76,10 @@ export default function Footer() {
             © 2010 - 2025 Ras Reggae Radio. Todos os direitos reservados.
           </p>
           <a 
-            href="https://readdy.ai/?origin=logo" 
+            href="#" 
             className="text-gray-400 hover:text-yellow-300 transition-colors text-sm mt-2 md:mt-0"
           >
-            Powered by Roots Ras Reggae
+            Powered by Roots Reggae
           </a>
         </div>
       </div>
