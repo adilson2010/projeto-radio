@@ -5,7 +5,7 @@ interface RadioPlayerRef {
   togglePlay: () => void;
 }
 
-const RadioPlayer = forwardRef<RadioPlayerRef>((props, ref) => {
+const RadioPlayer = forwardRef<RadioPlayerRef>((_props, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(70);
   const [isLoading, setIsLoading] = useState(false);

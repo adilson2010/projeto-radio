@@ -1,5 +1,4 @@
 
-import Button from '../base/Button';
 
 export default function AppDownload() {
   const handleStoreDownload = (store: string) => {

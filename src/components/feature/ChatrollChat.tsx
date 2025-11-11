@@ -1,5 +1,11 @@
 
 import { useEffect } from 'react';
+// ...existing code...
+declare global {
+  interface Window {
+    Chatroll?: any; // troque `any` por um tipo mais específico se tiver
+  }
+}
 
 export default function ChatrollChat() {
   useEffect(() => {
