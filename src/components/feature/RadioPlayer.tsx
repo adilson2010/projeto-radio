@@ -9,7 +9,7 @@ const RadioPlayer = forwardRef<RadioPlayerRef>((_, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(70);
   const [isLoading, setIsLoading] = useState(false);
-  const [connectionStatus, setConnectionStatus] = useState('Pronto para ouvir');
+  const [connectionStatus, setConnectionStatus] = useState('Aperte no play para conectar');
   const [listeners, setListeners] = useState(1247);
   const [listeningTime, setListeningTime] = useState(0);
   const [isMobile, setIsMobile] = useState(false);

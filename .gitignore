@@ -1,6 +1,14 @@
-node_modules
+/node_modules
 
-# Ignorar pasta de arquivos de distribuição
-dist/
+# Ignorar a pasta dist/ (arquivos de build/compilação)
+/dist
 
-#teste para repositorio
+# debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# vercel e outros arquivos de implantação
+.vercel/   
+
+node-fs-extra-debug.log*
