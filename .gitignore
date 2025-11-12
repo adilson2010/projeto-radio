@@ -1,3 +1,6 @@
 node_modules
 
+# Ignorar pasta de arquivos de distribuição
+dist/
+
 #teste para repositorio
