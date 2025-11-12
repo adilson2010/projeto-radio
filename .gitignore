@@ -12,3 +12,5 @@ yarn-debug.log*
 .vercel/   
 
 node-fs-extra-debug.log*
+
+deploy-hostgator.md
