@@ -9,9 +9,9 @@ npm-debug.log*
 yarn-debug.log*
 
 # vercel e outros arquivos de implantação
-.vercel/   
+.vercel/
+vercel.json 
 
 node-fs-extra-debug.log*
 
 *.md
-vercel.json
