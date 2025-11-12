@@ -14,4 +14,4 @@ yarn-debug.log*
 node-fs-extra-debug.log*
 
 *.md
-.vercel
+vercel.json
