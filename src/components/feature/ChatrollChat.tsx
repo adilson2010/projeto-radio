@@ -1,17 +1,11 @@
 
 import { useEffect } from 'react';
-// ...existing code...
-declare global {
-  interface Window {
-    Chatroll?: any; // troque `any` por um tipo mais específico se tiver
-  }
-}
 
 export default function ChatrollChat() {
   useEffect(() => {
     // Carregar script do Chatroll
     const script = document.createElement('script');
-    script.src = 'https://chatroll.com/embed/chat/rasreggaeradio';
+    script.src = 'https://chatroll.com/embed/chat/ras-reggae-radio';
     script.async = true;
     script.id = 'chatroll-script';
     
@@ -20,7 +14,7 @@ export default function ChatrollChat() {
       // Configurar o chat após carregar
       if (window.Chatroll) {
         window.Chatroll.init({
-          id: 'rasreggaeradio',
+          id: 'ras-reggae-radio',
           width: '100%',
           height: '350px',
           theme: 'green'
@@ -52,7 +46,7 @@ export default function ChatrollChat() {
       {/* Container do Chatroll */}
       <div className="flex-1 overflow-hidden rounded-lg border border-gray-200">
         <iframe
-          src="https://chatroll.com/embed/chat/chatrasreggae?id=ukTmEbbUQET&platform=html"
+          src="https://chatroll.com/embed/chat/ras-reggae-radio?id=ras-reggae-radio&platform=html"
           width="100%"
           height="100%"
           frameBorder="0"

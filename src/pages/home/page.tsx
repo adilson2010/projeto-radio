@@ -43,10 +43,10 @@ export default function Home() {
               Ras Reggae Radio
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
-              A melhor música reggae 24 horas por dia,
+              A melhor música reggae 24 horas por dia, 7 dias por semana
             </p>
             <p className="text-lg mb-12 opacity-80 max-w-2xl mx-auto">
-              Conecte-se com a cultura reggae autêntica. Ouça os clássicos do reggae roots e descubra novos talentos do reggae mundial.
+              Conecte-se com a cultura reggae autêntica. Ouça os clássicos de Bob Marley, Jimmy Cliff, Burning Spear e descubra novos talentos do reggae mundial.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -174,7 +174,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-6">Sobre a Ras Reggae Radio</h2>
               <p className="text-lg mb-6 opacity-90">
                 Desde 2010, a Ras Reggae Radio tem sido a voz autêntica do reggae no Brasil e no mundo. 
-                Nossa missão é espalhar a mensagem de amor, paz e humilde através da música reggae.
+                Nossa missão é espalhar a mensagem de amor, paz e unidade através da música reggae.
               </p>
               <p className="text-lg mb-8 opacity-90">
                 Com uma programação cuidadosamente selecionada, apresentamos desde os clássicos atemporais 
