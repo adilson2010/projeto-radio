@@ -18,7 +18,7 @@ export default function ProgramSchedule() {
       id: 1,
       time: '06:00',
       title: 'Roots Morning',
-      dj: 'DJ Marley',
+      dj: 'DJ Auto',
       description: 'Comece o dia com reggae clássico',
       isLive: false
     },
@@ -26,7 +26,7 @@ export default function ProgramSchedule() {
       id: 2,
       time: '09:00',
       title: 'Reggae Vibes',
-      dj: 'DJ Rasta',
+      dj: 'DJ Auto',
       description: 'Os melhores hits reggae',
       isLive: false
     },
@@ -34,7 +34,7 @@ export default function ProgramSchedule() {
       id: 3,
       time: '14:00',
       title: 'Live Session',
-      dj: 'DJ Echo',
+      dj: 'DJ Auto',
       description: 'Transmissão ao vivo com interação',
       isLive: true
     },
@@ -42,7 +42,7 @@ export default function ProgramSchedule() {
       id: 4,
       time: '18:00',
       title: 'Sunset Reggae',
-      dj: 'DJ Marley',
+      dj: 'DJ Auto',
       description: 'Reggae para o fim de tarde',
       isLive: false
     },
@@ -50,8 +50,8 @@ export default function ProgramSchedule() {
       id: 5,
       time: '21:00',
       title: 'Dub Night',
-      dj: 'DJ Echo',
-      description: 'Dub e eletrônico reggae',
+      dj: 'DJ Auto',
+      description: 'Roots Reggae',
       isLive: false
     }
   ];

@@ -5,7 +5,7 @@ interface RadioPlayerRef {
   togglePlay: () => void;
 }
 
-const RadioPlayer = forwardRef<RadioPlayerRef>((props, ref) => {
+const RadioPlayer = forwardRef<RadioPlayerRef>((_, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(70);
   const [isLoading, setIsLoading] = useState(false);
@@ -358,7 +358,7 @@ const RadioPlayer = forwardRef<RadioPlayerRef>((props, ref) => {
           onClick={() => {
             const shareData = {
               title: 'Ras Reggae Radio - Ao Vivo',
-              text: 'Escutando a melhor rádio reggae online!',
+              text: 'Escutando a melhor rádio reggae online! Ouça você também em http://rasreggaeradio.com',
               url: window.location.href
             };
             

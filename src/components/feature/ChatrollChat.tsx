@@ -1,11 +1,24 @@
 
 import { useEffect } from 'react';
 
+declare global {
+  interface Window {
+    Chatroll?: {
+      init: (options: {
+        id: string;
+        width: string;
+        height: string;
+        theme: string;
+      }) => void;
+    };
+  }
+}
+
 export default function ChatrollChat() {
   useEffect(() => {
     // Carregar script do Chatroll
     const script = document.createElement('script');
-    script.src = 'https://chatroll.com/embed/chat/ras-reggae-radio';
+    script.src = 'https://chatroll.com/embed/chat/chatrasreggae?id=ukTmEbbUQET';
     script.async = true;
     script.id = 'chatroll-script';
     
@@ -46,7 +59,7 @@ export default function ChatrollChat() {
       {/* Container do Chatroll */}
       <div className="flex-1 overflow-hidden rounded-lg border border-gray-200">
         <iframe
-          src="https://chatroll.com/embed/chat/ras-reggae-radio?id=ras-reggae-radio&platform=html"
+          src="https://chatroll.com/embed/chat/chatrasreggae?id=ukTmEbbUQET&platform=html"
           width="100%"
           height="100%"
           frameBorder="0"
