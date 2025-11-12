@@ -13,4 +13,4 @@ yarn-debug.log*
 
 node-fs-extra-debug.log*
 
-deploy-hostgator.md
+*.md
