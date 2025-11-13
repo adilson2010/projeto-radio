@@ -29,11 +29,11 @@ export default function AppDownload() {
               <span className="text-sm">iOS e Android</span>
             </div>
             <div className="flex items-center space-x-3">
-              <i className="ri-radio-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
+              <i className="ri-file-music-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
               <span className="text-sm">Qualidade HD</span>
             </div>
             <div className="flex items-center space-x-3">
-              <i className="ri-vinyl-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
+              <i className="ri-music-line text-yellow-300 text-xl w-6 h-6 flex items-center justify-center"></i>
               <span className="text-sm">Músicas jamaicana autêntica</span>
             </div>
             <div className="flex items-center space-x-3">
